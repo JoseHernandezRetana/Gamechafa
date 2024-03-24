@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cikge60lub83u"]
+
+[ext_resource type="Script" path="res://Timer.gd" id="1_klsto"]
+
+[node name="Timer" type="Timer"]
+script = ExtResource("1_klsto")
+
+[connection signal="timeout" from="." to="." method="_on_timeout"]

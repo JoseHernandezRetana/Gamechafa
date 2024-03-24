@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://doeam38l4efvn"]
+
+[ext_resource type="Script" path="res://Scenes/meta.gd" id="1_8k75l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tp7mj"]
+
+[node name="Meta" type="Area2D"]
+script = ExtResource("1_8k75l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_tp7mj")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

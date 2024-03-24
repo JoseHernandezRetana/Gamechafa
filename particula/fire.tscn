@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgb7vwuwp5c6a"]
+
+[ext_resource type="Script" path="res://Fire.gd" id="1_bfmws"]
+
+[sub_resource type="Curve" id="Curve_l3cys"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.505618, 1), 0.0, 0.0, 0, 0, Vector2(0.994382, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_5fbax"]
+offsets = PackedFloat32Array(0, 0.18, 0.533333, 0.78, 1)
+colors = PackedColorArray(0.717647, 0.282353, 0, 1, 0.960784, 0.752941, 0, 1, 0.992157, 0.984314, 0, 1, 0.996078, 0.992157, 0.572549, 0, 1, 1, 1, 1)
+
+[node name="Fire" type="Node2D"]
+script = ExtResource("1_bfmws")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(119, 68)
+amount = 3000
+emission_shape = 1
+emission_sphere_radius = 10.0
+gravity = Vector2(0, -100)
+linear_accel_min = -50.0
+linear_accel_max = -30.0
+radial_accel_min = -50.0
+radial_accel_max = -30.0
+scale_amount_min = 0.5
+scale_amount_max = 2.0
+scale_amount_curve = SubResource("Curve_l3cys")
+color_ramp = SubResource("Gradient_5fbax")

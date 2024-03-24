@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhvxdu3ju8tnk"]
+
+[ext_resource type="Script" path="res://Scenes/estadopersonal.gd" id="1_xup58"]
+
+[node name="Estadopersonal" type="Node2D"]
+script = ExtResource("1_xup58")

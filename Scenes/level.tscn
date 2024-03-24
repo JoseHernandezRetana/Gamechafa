@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=3 uid="uid://rccnc8i5vglq"]
+
+[ext_resource type="Texture2D" uid="uid://hmjlcmtoa33" path="res://Scenes/tile_0048.png" id="1_arloa"]
+[ext_resource type="PackedScene" uid="uid://dg8v4fl88lsmx" path="res://Scenes/Player/player.tscn" id="2_wsloi"]
+[ext_resource type="PackedScene" uid="uid://dfa1xwgmocrco" path="res://Scenes/pared.tscn" id="3_t5ybi"]
+[ext_resource type="PackedScene" uid="uid://doeam38l4efvn" path="res://Scenes/meta.tscn" id="4_myb24"]
+
+[node name="level1" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(582, 336.5)
+scale = Vector2(73.75, 43.0625)
+texture = ExtResource("1_arloa")
+
+[node name="Player" parent="." instance=ExtResource("2_wsloi")]
+position = Vector2(551, 395)
+scale = Vector2(3, 3)
+
+[node name="Pared" parent="." instance=ExtResource("3_t5ybi")]
+position = Vector2(613, 658)
+scale = Vector2(22.4772, 1.00977)
+
+[node name="Pared2" parent="." instance=ExtResource("3_t5ybi")]
+position = Vector2(33, 85)
+
+[node name="Pared3" parent="." instance=ExtResource("3_t5ybi")]
+position = Vector2(560, 17)
+scale = Vector2(20.1323, -0.712372)
+
+[node name="Pared4" parent="." instance=ExtResource("3_t5ybi")]
+position = Vector2(1147, 333)
+scale = Vector2(1, 10.48)
+
+[node name="Pared5" parent="." instance=ExtResource("3_t5ybi")]
+position = Vector2(156, 412)
+scale = Vector2(-1.07152, 6.70721)
+
+[node name="Meta" parent="." instance=ExtResource("4_myb24")]
+position = Vector2(57, 574)
+scale = Vector2(3.44, 3.2)

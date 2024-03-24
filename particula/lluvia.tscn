@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0k4a747bcthj"]
+
+[ext_resource type="Texture2D" uid="uid://coipqwm1v3kdc" path="res://particula/rain_drop.png" id="1_i8th4"]
+
+[sub_resource type="Curve" id="Curve_ao66u"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.235955, 1), 0.0, 0.0, 0, 0, Vector2(0.494382, 0.461538), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[node name="lluvia" type="Node2D"]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(-45, -80)
+scale = Vector2(1.5112, -1.67924)
+amount = 300
+texture = ExtResource("1_i8th4")
+emission_shape = 3
+emission_rect_extents = Vector2(200, 1)
+gravity = Vector2(1000, 980)
+scale_amount_min = 0.02
+scale_amount_max = 0.4
+scale_amount_curve = SubResource("Curve_ao66u")
+color = Color(0.00784314, 1, 1, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+scale = Vector2(-3.80058, -3.45488)
+zoom = Vector2(5, 5)
