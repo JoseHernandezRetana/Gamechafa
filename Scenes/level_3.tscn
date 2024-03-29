@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://bep0kwti1mjst"]
+
+[ext_resource type="Texture2D" uid="uid://hmjlcmtoa33" path="res://Scenes/tile_0048.png" id="1_xpq0y"]
+[ext_resource type="PackedScene" uid="uid://dg8v4fl88lsmx" path="res://Scenes/Player/player.tscn" id="2_w7kwd"]
+[ext_resource type="PackedScene" uid="uid://dfa1xwgmocrco" path="res://Scenes/pared.tscn" id="3_6wfpr"]
+[ext_resource type="PackedScene" uid="uid://doeam38l4efvn" path="res://Scenes/meta.tscn" id="4_dn44d"]
+
+[node name="level3" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(582, 336.5)
+scale = Vector2(73.75, 43.0625)
+texture = ExtResource("1_xpq0y")
+
+[node name="Player" parent="." instance=ExtResource("2_w7kwd")]
+position = Vector2(1080, 124)
+scale = Vector2(3, 3)
+
+[node name="Pared" parent="." instance=ExtResource("3_6wfpr")]
+position = Vector2(613, 658)
+scale = Vector2(22.4772, 1.00977)
+
+[node name="Pared2" parent="." instance=ExtResource("3_6wfpr")]
+position = Vector2(672, 169)
+rotation = -1.55434
+scale = Vector2(-0.775012, 15.8684)
+
+[node name="Pared7" parent="." instance=ExtResource("3_6wfpr")]
+position = Vector2(8.99998, 262)
+rotation = 0.0258752
+scale = Vector2(0.491541, 12.1851)
+
+[node name="Pared6" parent="." instance=ExtResource("3_6wfpr")]
+position = Vector2(766, 440)
+rotation = 1.59928
+scale = Vector2(0.367107, 10.9786)
+
+[node name="Pared3" parent="." instance=ExtResource("3_6wfpr")]
+position = Vector2(560, 17)
+scale = Vector2(17.8123, -0.712372)
+
+[node name="Pared4" parent="." instance=ExtResource("3_6wfpr")]
+position = Vector2(1147, 333)
+scale = Vector2(1, 10.48)
+
+[node name="Pared5" parent="." instance=ExtResource("3_6wfpr")]
+position = Vector2(504, 303)
+rotation = -1.55294
+scale = Vector2(-0.989896, 15.3828)
+
+[node name="Meta" parent="." instance=ExtResource("4_dn44d")]
+position = Vector2(1064, 576)
+scale = Vector2(3.44, 3.2)
